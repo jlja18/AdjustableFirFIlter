@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\GitHub\AdjustableFirFIlter\AdjustableFirFilter\FirFilter.ncd
+OUTFILE=E:\GitHub\AdjustableFirFIlter\AdjustableFirFilter\FirFilter.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=E:\GitHub\AdjustableFirFIlter\AdjustableFirFilter
+LICENSE=WebPack
+USER_INFO=211888858_0_0_551

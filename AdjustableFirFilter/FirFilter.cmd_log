@@ -1,0 +1,51 @@
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BPC3011-Papilio_Pro-general.ucf -p xc6slx9-tqg144-2 FirFilter.ngc FirFilter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FirFilter_map.ncd FirFilter.ngd FirFilter.pcf 
+par -w -intstyle ise -ol high -mt off FirFilter_map.ncd FirFilter.ncd FirFilter.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml FirFilter.twx FirFilter.ncd -o FirFilter.twr FirFilter.pcf -ucf BPC3011-Papilio_Pro-general.ucf 
+bitgen -intstyle ise -f FirFilter.ut FirFilter.ncd 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BPC3011-Papilio_Pro-general.ucf -p xc6slx9-tqg144-2 FirFilter.ngc FirFilter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FirFilter_map.ncd FirFilter.ngd FirFilter.pcf 
+par -w -intstyle ise -ol high -mt off FirFilter_map.ncd FirFilter.ncd FirFilter.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml FirFilter.twx FirFilter.ncd -o FirFilter.twr FirFilter.pcf -ucf BPC3011-Papilio_Pro-general.ucf 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BPC3011-Papilio_Pro-general.ucf -p xc6slx9-tqg144-2 FirFilter.ngc FirFilter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FirFilter_map.ncd FirFilter.ngd FirFilter.pcf 
+par -w -intstyle ise -ol high -mt off FirFilter_map.ncd FirFilter.ncd FirFilter.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml FirFilter.twx FirFilter.ncd -o FirFilter.twr FirFilter.pcf -ucf BPC3011-Papilio_Pro-general.ucf 
+bitgen -intstyle ise -f FirFilter.ut FirFilter.ncd 
+xst -intstyle ise -ifn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.xst" -ofn "E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FirFilter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BPC3011-Papilio_Pro-general.ucf -p xc6slx9-tqg144-2 FirFilter.ngc FirFilter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FirFilter_map.ncd FirFilter.ngd FirFilter.pcf 
+par -w -intstyle ise -ol high -mt off FirFilter_map.ncd FirFilter.ncd FirFilter.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml FirFilter.twx FirFilter.ncd -o FirFilter.twr FirFilter.pcf -ucf BPC3011-Papilio_Pro-general.ucf 
