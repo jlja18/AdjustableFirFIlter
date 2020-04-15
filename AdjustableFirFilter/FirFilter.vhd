@@ -31,22 +31,45 @@ use ieee.numeric_std.all;
 --use UNISIM.VComponents.all;
 
 entity FirFilter is
-    Port ( CLK : in  STD_LOGIC;
-           SW : in  STD_LOGIC_VECTOR (7 downto 0);
-			  Coef : in STD_LOGIC_VECTOR (7 downto 0); 
-           Divider : in  STD_LOGIC_VECTOR (7 downto 0);
+    Port ( sync : in  STD_LOGIC;
+           clk : in STD_LOGIC; 
+			  DataIN : in STD_LOGIC_VECTOR (15 downto 0);  
+			  DataOUT : out STD_LOGIC_VECTOR (15 downto 0); 
+           Divider : in  STD_LOGIC_VECTOR (15 downto 0);
            Reset : in  STD_LOGIC;
-           SetCoeff : in  STD_LOGIC;
-           SetDivider : in  STD_LOGIC;
-           LED : out  STD_LOGIC_VECTOR (7 downto 0));
+			  order : in STD_LOGIC_VECTOR (7 downto 0));
+		
 end FirFilter;
 
 
 architecture Behavioral of FirFilter is
-signal Coeff : STD_LOGIC_VECTOR(7 downto 0) := X"A3"; 
-signal MulOut : STD_LOGIC_VECTOR (15 downto 0);
+type coefficients is array (0 to 100) of signed (15 downto 0); 
+type DataStore is array (0 to 100) of signed (15 downto 0); 
+
+signal coeff : coefficients := (X"0000",X"0000",X"0000",X"0000",X"0000",X"0000",X"0000",X"0000",X"0000",X"0000",X"0000", X others => X"0000"); 
+signal DelayData : DataStore;
+
+signal state : unsigned (7 downto 0); 
+signal result : signed (31 downto 0);
+
+signal stop : STD_LOGIC := '0'; 
+
 begin
-mulout <= STD_LOGIC_VECTOR(signed(coef) * signed(SW)); 
-LED <= mulout (7 downto 0); 
+
+	process(clk) -- calculate output and sum
+	begin
+		if ((clk'event and clk = '1') and stop = '0') then
+			state <= state + 1; 
+			result <= result + DelayData(to_integer(state)) * coeff(to_integer(state));
+			if (state = unsigned(order)) then
+				state <= X"00";
+				stop <= '1'; 
+			end if; 
+		end if; 
+		
+	end process; 
+	
+	
+	
 end Behavioral;
 
