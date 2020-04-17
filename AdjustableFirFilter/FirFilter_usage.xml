@@ -4,8 +4,8 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="6">
-<DesignStatistics TimeStamp="Tue Apr 14 17:04:50 2020"><group name="NetStatistics">
+<DeviceUsageSummary rev="7">
+<DesignStatistics TimeStamp="Thu Apr 16 09:34:50 2020"><group name="NetStatistics">
 <item name="NumNets_Active" rev="5">
 <attrib name="value" value="52"/></item>
 <item name="NumNets_Vcc" rev="5">
@@ -50,18 +50,20 @@
 <attrib name="value" value="2"/></item>
 </group>
 <group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="6">
-<attrib name="value" value="25"/></item>
-<item name="AGG_IO" rev="6">
-<attrib name="value" value="25"/></item>
-<item name="AGG_LOCED_IO" rev="6">
-<attrib name="value" value="17"/></item>
-<item name="NUM_BONDED_IOB" rev="6">
-<attrib name="value" value="25"/></item>
-<item name="NUM_DSP48A1" rev="6">
+<item name="AGG_BONDED_IO" rev="7">
+<attrib name="value" value="18"/></item>
+<item name="AGG_IO" rev="7">
+<attrib name="value" value="18"/></item>
+<item name="AGG_LOCED_IO" rev="7">
+<attrib name="value" value="2"/></item>
+<item name="NUM_BONDED_IOB" rev="7">
+<attrib name="value" value="18"/></item>
+<item name="NUM_BUFG" rev="7">
 <attrib name="value" value="1"/></item>
-<item name="NUM_LOCED_IOB" rev="6">
-<attrib name="value" value="17"/></item>
+<item name="NUM_DSP48A1" rev="7">
+<attrib name="value" value="1"/></item>
+<item name="NUM_LOCED_IOB" rev="7">
+<attrib name="value" value="2"/></item>
 </group>
 </DesignStatistics>
 <ReportConfigData TimeStamp="Tue Apr 14 16:53:04 2020"><group name="IOB_OUTBUF">

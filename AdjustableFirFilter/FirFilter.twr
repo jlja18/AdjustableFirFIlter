@@ -26,11 +26,31 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
    please see the device datasheet.
 
 ================================================================================
-Timing constraint: NET "CLK_IBUF" PERIOD = 31.25 ns HIGH 50%;
+Timing constraint: NET "clk_BUFGP/IBUFG" PERIOD = 31.25 ns HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
  0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   2.959ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "clk_BUFGP/IBUFG" PERIOD = 31.25 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 28.291ns (period - min period limit)
+  Period: 31.250ns
+  Min period limit: 2.959ns (337.952MHz) (Tdspper_PREG)
+  Physical resource: Maddsub_n0228/CLK
+  Logical resource: Maddsub_n0228/CLK
+  Location pin: DSP48_X0Y15.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 28.584ns (period - min period limit)
+  Period: 31.250ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: clk_BUFGP/BUFG/I0
+  Logical resource: clk_BUFGP/BUFG/I0
+  Location pin: BUFGMUX_X2Y2.I0
+  Clock network: clk_BUFGP/IBUFG
 --------------------------------------------------------------------------------
 
 
@@ -51,9 +71,13 @@ Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 Constraints cover 0 paths, 0 nets, and 0 connections
 
 Design statistics:
-No global statistics to report.
+   Minimum period:   2.959ns{1}   (Maximum frequency: 337.952MHz)
 
-Analysis completed Tue Apr 14 17:05:01 2020 
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Thu Apr 16 09:35:02 2020 
 --------------------------------------------------------------------------------
 
 Trace Settings:

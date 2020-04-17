@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/GitHub/AdjustableFirFIlter/AdjustableFirFilter/FIRtester_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="firtester" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/firtester/sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sync</obj_property>
+      <obj_property name="ObjectShortName">sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/firtester/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/firtester/datain" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datain[15:0]</obj_property>
+      <obj_property name="ObjectShortName">datain[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/firtester/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/firtester/order" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">order[7:0]</obj_property>
+      <obj_property name="ObjectShortName">order[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/firtester/point" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">point[4:0]</obj_property>
+      <obj_property name="ObjectShortName">point[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/firtester/loadcoeff" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">loadcoeff</obj_property>
+      <obj_property name="ObjectShortName">loadcoeff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/firtester/dataout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dataout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataout[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/firtester/led" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">led</obj_property>
+      <obj_property name="ObjectShortName">led</obj_property>
+   </wvobject>
+   <wvobject fp_name="/firtester/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/firtester/sync_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">sync_period</obj_property>
+      <obj_property name="ObjectShortName">sync_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/firtester/uut/delaydata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">delaydata[0:100]</obj_property>
+      <obj_property name="ObjectShortName">delaydata[0:100]</obj_property>
+   </wvobject>
+</wave_config>
